@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+* {
+    font-family: sans-serif, "Montserrat";
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+section {
+    border: 2px solid black;
+    width: 31%;
+    height: 18rem;
+    position: relative;
+    background-color: grey;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+section h2 {
+    border: 2px solid black;
+    border-right: none;
+    border-top: none;
+    font-family: "Montserrat";
+    position: absolute;
+    width: 130px;
+    height: 2rem;
+    text-align: center;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+section p {
+    padding: 2rem;
+    font-weight: 600;
+}
+
+#chicken {
+    margin-left: 1rem;
+}
+
+#chicken h2 {
+    background-color: darksalmon;
+}
+
+#beef h2 {
+    color: white;
+    background-color: brown;
+}
+
+#sushi {
+    margin-right: 1rem;
+}
+
+#sushi h2 {
+    background-color: khaki;
+}
+
+@media (max-width: 488px) {
+    section {
+        width: 100%;
+        height: 15rem;
+    }
+
+    #chicken, #beef {
+        margin-right: 1rem;
+    }
+
+    #beef, #sushi {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 488px) {
+    section {
+        width: 100%;
+        height: 13rem;
+    }
+
+    #chicken, #beef {
+        margin-right: 1rem;
+    }
+
+    #beef, #sushi {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+    #chicken, #beef {
+        width: 47%;
+        height: 16rem;
+    }
+
+    #beef {
+        margin-right: 1rem;
+    }
+
+    #sushi {
+        width: 100%;
+        margin-left: 1rem;
+        height: 12rem;
+    }
+}
